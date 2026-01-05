@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Champion Profile</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Champion: Akali</h1>
+      <h2>Skills</h2>
+      <ul>
+        <li>
+          <button onclick="handleInput('Q')">(Q)</button>
+          <p>Five Point Strike (Cost: 30)</p>
+        </li>
+        <li>
+          <button onclick="handleInput('W')">(W)</button>
+          <p>Twilight Shroud (Cost: 0 (Add 20 energy))</p>
+        </li>
+        <li>
+          <button onclick="handleInput('E')">(E)</button>
+          <p>Shuriken Flip (Cost: 10)</p>
+        </li>
+        <li>
+          <button onclick="handleInput('R')">(R)</button>
+          <p>Perfect Execution (Cost: 50)</p>
+        </li>
+      </ul>
+      <p id="energy-status">Remaining energy: 100</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

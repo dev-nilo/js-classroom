@@ -1,0 +1,33 @@
+body {
+  background-color: #010a13;
+  color: #cdbe91;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #0ac8b9;
+  border-bottom: 2px solid #cdbe91;
+  padding-bottom: 10px;
+}
+ul {
+  list-style-type: square;
+  line-height: 1.8;
+}
+
+button {
+  background-color: #1e2328;
+  color: #f0e6d2;
+  border: 1px solid #c8aa6e;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #cdbe91;
+  color: #010a13;
+}

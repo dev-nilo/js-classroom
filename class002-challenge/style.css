@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+
+:root {
+  --bg-color: #1a1601;
+  --text-color: #d8c792;
+  --accent-color: #11a79b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+button {
+  font-family: "Fira Code", monospace;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+h1 {
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--text-color);
+  width: fit-content;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+button {
+  background: transparent;
+  color: inherit;
+  border: 1px solid currentColor;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}
