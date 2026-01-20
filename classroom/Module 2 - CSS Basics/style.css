@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100dvw;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9; /* Light grey background */
+}
+
+header {
+  background: #333; /* Dark background */
+  color: #f9f9f9; /* White text */
+  padding: 1rem;
+  text-align: center;
+
+  nav ul {
+    list-style: none; /* Removes the dots from the list */
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline; /* Puts the menu items side-by-side */
+    margin-right: 15px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none; /* Removes the underline from links */
+  }
+
+  nav ul li a:hover {
+    transition: text-decoration 0.3s ease-in-out; /* Smooth transition for underline */
+    text-decoration: underline; /* Adds an underline when hovering */
+  }
+}
+
+main {
+  padding: 2rem;
+  text-align: center;
+
+  section {
+    margin: 2rem;
+    padding: 2rem;
+  }
+
+  #welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background: white;
+    padding: 20px;
+    margin: 1rem;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 300px; /* Fixed width for the card */
+  }
+
+  .product-card h3 {
+    color: #333;
+  }
+
+  .product-card p {
+    color: #666;
+  }
+
+  button {
+    background-color: #007bff; /* "Success" Green color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer; /* Shows the "hand" icon on hover */
+    border-radius: 5px;
+  }
+
+  button:hover {
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for background color */
+    background-color: #0056b3; /* Darker green when hovering */
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+}
